@@ -1,0 +1,285 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Anta", sans-serif;
+    box-sizing: border-box;
+}
+  
+ul,
+li{
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: rgb(3, 3, 3);
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.1em;
+}
+
+header nav ul li a {
+    color: rgb(253, 253, 253);
+}
+
+#seccion-principal {
+    display: block;
+    padding: 0em;
+}
+
+section.seccion-1 {
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(252, 207, 143);
+}
+
+h2 {
+   
+    color: #1f0b0b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 0em; 
+    display: flex;
+    justify-content: center; 
+}
+
+.parrafo1 {
+    color: #b82b2b;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.parrafo2 {
+    color: #b82b2b;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.acerca-de {
+    text-align: left;
+    color: rgb(133, 4, 4);
+
+}
+
+main .seccion-2 
+img{
+    background-color: rgb(44, 137, 137);
+    width: 100%;    
+}
+
+/*seccion trabajos*/
+
+.trabajos {
+  background-color: #22211f;
+
+}
+
+h3{
+  font-family: "Anta", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #ba1212;
+
+}
+
+.slide{
+  background-color: #746b5a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slide2{
+  width: 230px;
+  margin-bottom: 1em;
+  border-radius: 18px;
+  border: 2px red;
+}
+
+.slide2 img{
+  width: 100%;
+  border-radius: 16px;
+
+}
+
+h2{
+  text-align: center;
+}
+.slide2 p {
+  text-align: justify;
+  font-size: 0.9em;
+  margin: 1em;
+}
+
+.slide2 a {
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+}
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+   padding: 1em;
+    background-color: #b82b2b;
+    width: 100%;
+    height: 60%;
+    
+   
+
+}
+.contenedor ul{
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+
+.contenedor a{
+  font-size: 40px;
+  color:  black;
+  transition: all ease 300ms;
+}
+
+
+.facebook {
+   
+    color: blue;
+}
+.whatsapp {
+  
+    color: green;
+   
+}
+.twitter {
+   
+    color: black;
+}
+.tiktok {
+  
+    color: white;
+}
+.contenedor a:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+#footer {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b82b2b;
+    transition: all ease 300ms;
+    
+}
+.footer menu a{
+    transform: scale(1.2);
+    font-size: 30px;
+}
+
+/* MENU */
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: #090909;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Estilos para pantallas mas pequeñas (hasta 768px)*/
+
+@media (max-width: 768px) {
+    header {
+        background-color: rgb(210, 88, 74);
+    }
+
+    .acerca-de {
+        text-align: center;
+    }
+    
+    .acerca-imagen {
+        margin-bottom: 40px;
+    }
+    h2.fuente-acento {
+        text-align: center;
+    }
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #675a5a;
+        text-align: center;
+        top: 8%;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: rgb(244, 230, 230);
+    }
+}
+
+
